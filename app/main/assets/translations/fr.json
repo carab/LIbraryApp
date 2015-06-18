@@ -1,0 +1,43 @@
+{
+  "sidebar": {
+    "library": "Bibliothèque",
+    "all": "Tout",
+    "favorite": "Favoris",
+    "books": "Livres",
+    "comics": "BDs",
+    "showRead": "Déjà lus",
+    "showInProgress": "En cours de lecture",
+    "showUnread": "Pas encore lus",
+    "settings": "Paramètres"
+  },
+  "controls": {
+    "barcode": "Scanner un code barre",
+    "manually": "Ajouter manuellement"
+  },
+  "toolbar": {
+    "menu": "Ouvrir le menu"
+  },
+  "book": {
+    "list": {
+      "page": "Tous les livres"
+    },
+    "form": {
+      "page": "Ajouter un livre"
+    },
+    "model": {
+      "title": "Titre",
+      "subtitle": "Sous-titre",
+      "collection": "Collection",
+      "isbn": "ISBN",
+      "isbn10": "ISBN 10",
+      "isbn13": "ISBN 13",
+      "authors": "Auteurs",
+      "publishers": "Editeur",
+      "publishedDate": "Date de publication",
+      "description": "Description",
+      "pageCount": "Nombre de pages",
+      "labels": "Libellés",
+      "cover": "Couverture"
+    }
+  }
+}

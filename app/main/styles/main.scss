@@ -1,0 +1,15 @@
+.controls {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.sidebar {
+  .active {
+    background: rgba(0, 0, 0, 0.05);
+
+    .md-list-item-inner {
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<md-content class="md-padding">
+  <div layout layout-sm="column">
+    <md-input-container flex>
+      <label><translate>book.model.isbn</translate></label>
+      <input ng-model="vm.book.isbn">
+    </md-input-container>
+    <md-input-container flex>
+      <label><translate>book.model.title</translate></label>
+      <input ng-model="vm.book.title">
+    </md-input-container>
+    <md-input-container flex>
+      <label><translate>book.model.authors</translate></label>
+      <input ng-model="vm.book.authors">
+    </md-input-container>
+  </div>
+  <md-input-container>
+    <label><translate>book.model.description</translate></label>
+    <textarea ng-model="vm.book.description"></textarea>
+  </md-input-container>
+</md-content>

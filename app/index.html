@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>LibraryApp</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css main/styles/main.css -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="main/styles/main.css">
+    <!-- endinject -->
+    <!-- endbuild -->
+  </head>
+  <body ng-app="LibraryApp" layout="column">
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <section layout="row" flex>
+      <sidebar></sidebar>
+
+      <div layout="column" flex>
+        <toolbar></toolbar>
+
+        <md-content layout="column" flex ui-view></md-content>
+      </div>
+    </section>
+
+    <controls></controls>
+
+    <script src="cordova.js"></script> <!-- will be a 404 during development -->
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/ionic/release/js/ionic.js"></script>
+    <script src="bower_components/ionic/release/js/ionic-angular.js"></script>
+    <script src="bower_components/ngCordova/dist/ng-cordova.js"></script>
+    <script src="bower_components/angular-dynamic-locale/src/tmhDynamicLocale.js"></script>
+    <script src="bower_components/angular-translate/angular-translate.js"></script>
+    <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+    <script src="bower_components/localforage/dist/localforage.js"></script>
+    <script src="bower_components/angular-localForage/dist/angular-localForage.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/app.js -->
+    <!-- inject:js -->
+    <script src="main/main.js"></script>
+    <script src="main/services/settings.js"></script>
+    <script src="main/services/book.js"></script>
+    <script src="main/directives/toolbar.js"></script>
+    <script src="main/directives/sidebar.js"></script>
+    <script src="main/directives/controls.js"></script>
+    <script src="main/directives/book/list.js"></script>
+    <script src="main/directives/book/form.js"></script>
+    <script src="main/controllers/start.js"></script>
+    <script src="main/constants/config.js"></script>
+    <script src="app.js"></script>
+    <!-- endinject -->
+    <!-- endbuild -->
+  </body>
+</html>

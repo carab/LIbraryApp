@@ -1,0 +1,26 @@
+<div class="controls">
+  <md-fab-speed-dial md-open="isOpen" md-direction="up" class="md-fling">
+    <md-fab-trigger>
+      <md-button
+        class="md-fab md-accent"
+        aria-label="{{ 'controls.add' | translate }}"
+        ng-if="vm.isNewButtonShown()">
+        <md-icon>add</md-icon>
+      </md-button>
+    </md-fab-trigger>
+    <md-fab-actions>
+      <md-button ui-sref="book-form" aria-label="{{ 'controls.scanBarcode' | translate }}" class="md-fab md-primary md-mini">
+        <md-tooltip md-direction="left">
+          <translate>controls.barcode</translate>
+        </md-tooltip>
+        <md-icon>photo_camera</md-icon>
+      </md-button>
+      <md-button aria-label="{{ 'controls.scanBarcode' | translate }}" class="md-fab md-primary md-mini">
+        <md-tooltip md-direction="left">
+          <translate>controls.manually</translate>
+        </md-tooltip>
+        <md-icon>create</md-icon>
+      </md-button>
+    </md-fab-actions>
+  </md-fab-speed-dial>
+</div>

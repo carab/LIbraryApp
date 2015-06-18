@@ -1,0 +1,65 @@
+<div class="sidebar">
+  <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="sidebar">
+    <md-toolbar>
+      <h1 class="md-toolbar-tools">
+        <translate>sidebar.library</translate>
+      </h1>
+    </md-toolbar>
+
+    <md-list>
+      <md-list-item ng-click="vm.go('all')" ng-class="{'active': vm.is('all')}">
+        <md-icon>library_books</md-icon>
+        <p>
+          <translate>sidebar.all</translate>
+        </p>
+      </md-list-item>
+      <md-list-item ng-click="vm.go('favorite')" ng-class="{'active': vm.is('favorite')}">
+        <md-icon>favorite</md-icon>
+        <p>
+          <translate>sidebar.favorite</translate>
+        </p>
+      </md-list-item>
+      <md-list-item ng-click="vm.go('books')" ng-class="{'active': vm.is('books')}">
+        <md-icon>format_align_left</md-icon>
+        <p>
+          <translate>sidebar.books</translate>
+        </p>
+      </md-list-item>
+      <md-list-item ng-click="vm.go('comics')" ng-class="{'active': vm.is('comics')}">
+        <md-icon>chat</md-icon>
+        <p>
+          <translate>sidebar.comics</translate>
+        </p>
+      </md-list-item>
+      <md-divider></md-divider>
+      <md-list-item>
+        <md-icon>done</md-icon>
+        <p>
+          <translate>sidebar.showRead</translate>
+        </p>
+        <md-switch class="md-secondary" ng-model="vm.settings.showRead" ng-change="vm.saveSettings()"></md-switch>
+      </md-list-item>
+      <md-list-item>
+        <md-icon>turned_in</md-icon>
+        <p>
+          <translate>sidebar.showInProgress</translate>
+        </p>
+        <md-switch class="md-secondary" ng-model="vm.settings.showInProgress" ng-change="vm.saveSettings()"></md-switch>
+      </md-list-item>
+      <md-list-item>
+        <md-icon>visibility_off</md-icon>
+        <p>
+          <translate>sidebar.showUnread</translate>
+        </p>
+        <md-switch class="md-secondary" ng-model="vm.settings.showUnread" ng-change="vm.saveSettings()"></md-switch>
+      </md-list-item>
+      <md-divider></md-divider>
+      <md-list-item ng-click="vm.go('settings')">
+        <md-icon>settings</md-icon>
+        <p>
+          <translate>sidebar.settings</translate>
+        </p>
+      </md-list-item>
+    </md-list>
+  </md-sidenav>
+</div>
